@@ -1,0 +1,54 @@
+
+.mainContainer
+{
+    /* flex:1; */
+    display:flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: white;
+    margin:20px;
+
+    height:700;
+}
+.userImage{
+    width:15%;
+    background-color: white;
+  }
+
+.postContent{
+    width:85%;
+    background-color: blue;
+  }
+
+.postLabel{
+    font-size: 20px;
+    color:black;
+}
+p{
+   color:white;
+   text-align: center;
+}
+
+/* New rules if the window width is smaller than 1024px */
+@media screen and (max-width: 1024px)
+{
+    .mainContainer
+    {
+        display:flex;
+        flex-direction: column;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+    }
+    .userImage{
+        height:75%;
+
+        /* background-color: blue;  */
+      }
+    
+    .postContent{
+        /* height:85%; */
+      background-color: orange;
+    }
+}
