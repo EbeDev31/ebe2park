@@ -75,7 +75,7 @@ export default class App extends React.Component {
                 <button onClick={this.seeMore} >
                   {this.state.showBtn}
                 </button>
-                <button onClick={this.props.deletePost}> Delete Post</button>
+                <button onClick={()=>this.handleDelete(this.state.id)}> Delete Post</button>
            </div>
           </div>
           
