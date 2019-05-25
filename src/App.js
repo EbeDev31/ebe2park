@@ -215,7 +215,12 @@ createPostList=()=>{
     const posts = this.state.posts;
     const listItems = posts.map((post,index) =>
        
-      <PostContainer key={post.id} image={this.getUserImageData(post.userId)[0]} user={this.getUserDetails(post.userId)} post={post.body} id={post.id} deletePost={this.deletePost.bind(this,post.id)}/>
+      <PostContainer 
+      key={post.id} 
+      image={this.getUserImageData(post.userId)[0]}
+      user={this.getUserDetails(post.userId)}
+      post={post.body} id={post.id} 
+      deletePost={this.deletePost}/>
     
     );
     return (
